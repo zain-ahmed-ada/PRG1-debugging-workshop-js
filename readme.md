@@ -5,7 +5,6 @@
 In this codespace, you should have the following applications installed:
 
 1. `node`. This is the JavaScript runtime we'll use to execute the JavaScript programs in this workshop. Check node is installed by running `node --version` in your terminal and check this command returns the current node version.
-1. `eslint` This is a static analysis tool for checking syntax and issues in your code. Check eslint is installed by running `eslint --version` in your terminal and check this command returns the current eslint version.
 
 ## Background
 
@@ -49,10 +48,6 @@ In most programming languages, we can print or log variables to check if they're
 
 Stepping through code, also known as "playing computer," is a technique where you step through the execution of a program line by line to check the values in memory as the program runs. You can do this manually using a piece of paper or use tools like [Python Tutor](https://pythontutor.com/visualize.html#mode=edit) for visualization.
 
-### 🔬 Static Analysis
-
-[Static analysis](https://www.perforce.com/blog/sca/what-static-analysis#static-01) tools are powerful allies in the battle against bugs. These tools analyze your code without executing it, helping you identify potential issues early in the development process. One popular static analysis tool for JavaScript is ESLint. You will find Eslint installed in this codespace. To check for errors with eslint against a particular directory you can run `eslint <dir-name>` in your terminal.
-
 ### 💡 Rubber Duck Debugging
 
 This technique involves explaining your code, line by line, to an inanimate object (traditionally a rubber duck). By verbalizing your code, you often spot the issue yourself. This method can be surprisingly effective in helping you understand your own code better and identify logical errors.
@@ -83,8 +78,6 @@ As a group, you should check you understand the task by going through some probl
 1. `count-char`
 
 ### 🧠 Challenge
-
-In this section, you can develop your skills further by using the [**VSCode debugger**](https://code.visualstudio.com/docs/editor/debugging) to step through the execution of the code in the problems below. Check out the documentation to familiarise yourself with this tool and debug the code.
 
 1. `multiple-of-five`
 1. `find-century`
