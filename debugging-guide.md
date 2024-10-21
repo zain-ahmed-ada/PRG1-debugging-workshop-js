@@ -22,7 +22,7 @@ We can use the command: `npm test -- -t "square function"`
 
 For even more specificity, we can isolate specific test cases:
 
-![isolate-test-block.png](assets/solate-test-block.png)
+![isolate-test-block.png](assets/isolate-test-block.png)
 
 We can use a modified form of the command: `npm test —- -t "squares positive integers correctly"`
 
