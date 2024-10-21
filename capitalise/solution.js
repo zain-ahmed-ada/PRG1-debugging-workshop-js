@@ -1,5 +1,6 @@
 function capitalise(word) {
-  word[0] = word[0].toUpperCase();
+  word = word.toLowerCase();
+  word = word.replace(word[0], word[0].toUpperCase());
   return word;
 }
 
@@ -9,3 +10,4 @@ module.exports = { capitalise };
 
 // Advanced hint: When you've called the function with a string, you can also run this file with a runtime called bun (just run bun <path-to-file>)
 // bun runs JS files like node but with a few differences - can you spot any differences?
+console.log(capitalise("hello"));
