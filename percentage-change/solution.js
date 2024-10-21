@@ -2,8 +2,7 @@ function calculatePercentageChange(original, newAmount) {
   if (original - newAmount !== 0) {
     const difference = newAmount - original;
     let percentageDifference = (difference / original) * 100;
-    percentageDifference = percentageDifference.toFixed(0);
-    return parseInt(percentageDifference);
+    return parseInt(percentageDifference.toFixed(0));
   } else {
     return 0;
   }
