@@ -12,23 +12,23 @@ In Jest, we can use the `-t` flag to isolate specific test cases:
 
 See this snippet from the docs:
 
-![image.png](image.png)
+![image.png](assets/image.png)
 
 Consider this test suite, we can isolate the tests to run all tests within the `describe` block.
 
-![isolate-describe-block.png](Isolate-describe-block.png)
+![isolate-describe-block.png](assets/isolate-describe-block.png)
 
 We can use the command: `npm test -- -t "square function"`
 
 For even more specificity, we can isolate specific test cases:
 
-![isolate-test-block.png](Isolate-test-block.png)
+![isolate-test-block.png](assets/solate-test-block.png)
 
 We can use a modified form of the command: `npm test —- -t "squares positive integers correctly"`
 
 ## 📕 Read and interpret the tests
 
-![test-feedback.png](test-feedback.png)
+![test-feedback.png](assets/test-feedback.png)
 
 From reading the test feedback, double-check the following:
 
@@ -46,10 +46,10 @@ Next we’ll run our tests in the JavaScript debug terminal - this means the tes
 
 Open a **JavaScript Debug Terminal**
 
-![image.png](terminal-dropdown-menu.png)
+![image.png](assets/terminal-dropdown-menu.png)
 
 Now run the same test command as earlier - this time the debugger will pause execution at breakpoints in the code.
 
 Now we can use the debug control panel to step through the execution of our code.
 
-![image.png](debug-control-panel.png)
+![image.png](assets/debug-control-panel.png)

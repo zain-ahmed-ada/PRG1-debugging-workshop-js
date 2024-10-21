@@ -38,6 +38,8 @@ Effective debugging involves several key steps:
 4. Use various strategies (see below) to find out why the bug is occurring.
 5. Fix the bug and verify that the program now works as expected.
 
+A more in-depth [optional debugging guide](./debugging-guide.md) is available for those wanting to practice their use of the VSCode debugger.
+
 ## 🧭 Debugging strategies
 
 ### 🖨️ Printing to the console
