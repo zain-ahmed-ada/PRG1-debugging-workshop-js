@@ -1,10 +1,14 @@
-function calculatePercentageDifference(original, newAmount) {
-  const difference = Math.abs(newAmount - original);
-  const average = (original - newAmount) / 2;
-  const percentageDifference = (average / difference) * 100;
-  return percentageDifference.toFixed(2);
+function calculatePercentageChange(original, newAmount) {
+  if (original - newAmount !== 0) {
+    const difference = newAmount - original;
+    let percentageDifference = (difference / original) * 100;
+    percentageDifference = percentageDifference.toFixed(0);
+    return parseInt(percentageDifference);
+  } else {
+    return 0;
+  }
 }
 
-module.exports = { calculatePercentageDifference };
+module.exports = { calculatePercentageChange };
 
-calculatePercentageDifference(50, 40); // should return -20 as there's been a 20% decrease from 50 to 40
+console.log(calculatePercentageChange(50, 40)); // should return -20 as there's been a 20% decrease from 50 to 40
