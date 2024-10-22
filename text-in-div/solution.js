@@ -1,15 +1,27 @@
 // this implementation is working...
 
 function textInDiv(text, maxWidth) {
-  if (maxWidth < 15) return "INVALID INPUT";
-  let formattedText = "";
-  while (maxWidth < text.length) {
-    const splitPoint = text.lastIndexOf("", maxWidth);
-    formattedText += text.slice(0, splitPoint) + "\n";
-    text = text.slice(splitPoint);
+  if (!text.includes(" ")) {
+    return text;
+  }
+  if (maxWidth < 15) {
+    return "INVALID INPUT";
   }
 
-  formattedText = formattedText + text;
+  let formattedText = "";
+
+  while (text.length > maxWidth) {
+    let splitPoint = text.lastIndexOf(" ", maxWidth);
+
+    if (splitPoint === -1 || splitPoint === 0) {
+      splitPoint = maxWidth;
+    }
+
+    formattedText += text.slice(0, splitPoint) + "\n";
+    text = text.slice(splitPoint).trim();
+  }
+
+  formattedText += text;
   return formattedText;
 }
 
