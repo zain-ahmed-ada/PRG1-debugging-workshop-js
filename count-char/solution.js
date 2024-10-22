@@ -1,13 +1,14 @@
 function countChar(string, char) {
-  let i = 0;
   let count = 0;
-  do {
-    if ((string[i] = char)) {
+
+  for (let i = 0; i < string.length; i++) {
+    if (string[i] === char) {
       count++;
-      i++;
     }
-  } while (i < char.length);
+  }
   return count;
 }
 
 module.exports = { countChar };
+
+console.log(countChar("zAin", "a"));
