@@ -1,10 +1,13 @@
 function sumDigits(num) {
   let sum = 0;
-  while (num > 0) {
-    sum += num % 10;
-    num--;
+  num = num.toString();
+
+  for (let i = 0; i < num.length; i++) {
+    sum += parseInt(num[i]);
   }
   return sum;
 }
 
 module.exports = { sumDigits };
+
+console.log(sumDigits(2));
