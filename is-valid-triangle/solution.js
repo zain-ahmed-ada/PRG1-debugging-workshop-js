@@ -5,7 +5,7 @@ function isValidTriangle(a, b, c) {
   }
 
   // Check the triangle inequality
-  if (a + b >= c && b + c >= a && c + a > b) {
+  if (a + b > c && b + c > a && c + a > b) {
     return true;
   }
 
@@ -13,3 +13,5 @@ function isValidTriangle(a, b, c) {
 }
 
 module.exports = { isValidTriangle };
+
+console.log(isValidTriangle(1, 2, 3));
